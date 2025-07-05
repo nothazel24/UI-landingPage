@@ -1,12 +1,354 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap components -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+AMvyTG2U1zY+UJ0k0t9UJ0ZC2tm" crossorigin="anonymous"></script>
+
+  <title>DockVPS | About us</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR SECTION -->
+  <nav class="navbar navbar-expand-lg navbar-light py-3 px-5 d-flex flex-row fixed-top" style="
+          background-color: #fefefe;
+          border-bottom: 1px solid rgba(43, 43, 43, 0.07);
+        ">
+    <div class="logo">
+      <a class="navbar-brand fw-bold" href="#">Dock<span class="text-white"
+          style="background-color: #5948C6; padding-right: 1rem;">Vps</span></a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+
+        <div class="nav-links mx-5 d-flex flex-row">
+          <li class="nav-item active me-3">
+            <a class="nav-link" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item active me-3">
+            <a class="nav-link" href="../list-vps/index.html">Products</a>
+          </li>
+          <li class="nav-item active me-3">
+            <a class="nav-link" href="./index.html">Acout Us</a>
+          </li>
+        </div>
+
+        <li class="nav-item">
+          <a class="nav-link ml-4" href="../login/index.html">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 ml-3 font-weight-bold rounded text-white fw-bold mx-3"
+            style="background-color: #5948C6;" href="#">Registrasi</a>
+        </li>
+      </ul>
+    </div>
+  </nav> <!-- END NAV SECTION -->
+
+  <!-- SECTION ONE -->
+  <section class="container-fluid" style="margin-top: 6rem;">
+
+    <div class="row mx-4">
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <h1>Tentang Kami</h1>
+        <p>DockVPS adalah penyedia layanan VPS (Virtual Private Server) yang lahir dari kebutuhan akan infrastruktur
+          server yang stabil, cepat, dan sepenuhnya bisa dikendalikan oleh pengguna. Kami percaya bahwa setiap
+          developer, startup, dan pelaku UKM berhak mendapatkan akses ke teknologi yang tangguh, tanpa harus dipusingkan
+          oleh kerumitan teknis.</p>
+        <div class="btn btn-md rounded shadow-sm text-white fw-bold px-4 w-50" style="background-color: #5948C6;">
+          Dokumentasi video</div>
+      </div>
+
+      <div class="col-lg-6 d-flex justify-content-end">
+        <img src="../../assets/components/img/sprite-about.png" alt="company" width="550" height="500"
+          class="rounded shadow-sm">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SECTION TWO -->
+  <section class="container-fluid py-5" style="margin-top: 5rem; background-color: #efefef;">
+
+    <div class="row mx-3">
+      <div class="col-lg-5">
+        <img src="../../assets/components/img/sprite-about.png" alt="company" width="500" height="500"
+          class="rounded shadow-sm">
+      </div>
+
+      <div class="col-lg-7 d-flex flex-column justify-content-center gap-4">
+
+        <div class="one">
+          <h1 class>Detail</h1>
+          <p>Dengan infrastruktur modern, dukungan teknis yang responsif, serta fleksibilitas penuh dalam pengelolaan
+            server, DockVPS hadir sebagai mitra digital yang membantu kamu membangun dan menjalankan proyek dengan
+            percaya diri.</p>
+        </div>
+
+        <div class="two">
+          <h2>Visi kami</h2>
+          <p>Menjadi solusi VPS terpercaya dan terjangkau bagi developer, bisnis kecil, dan profesional digital yang
+            membutuhkan kendali penuh atas performa server mereka</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- WHY US? -->
+  <section class="features container-fluid" style="background-color: #f6f6f6; padding: 6rem 0 6rem 0;">
+
+    <!-- HEADER -->
+    <div class="header d-flex flex-column justify-content-center">
+
+      <!-- ICONS -->
+      <div class="feature-ico bg-white border border-black px-4 py-2 mx-auto mb-2"
+        style="border-radius: 20px; width: 170px;">
+        <div class="inner d-flex flex-row gap-3 align-items-center">
+          <img src="../../assets/components/icons/feature-ico.svg" alt="feature" width="25" height="25">
+          <p class="m-0" style="color: #46399c; font-size: 15px;">WHY US?</p>
+        </div>
+      </div>
+
+      <!-- TEXT -->
+      <div class="title text-center mx-auto" style="width: 80%;">
+        <h1 class="mx-auto" style="width: 80%">Kenapa kami ?</h1>
+        <p class="mt-3 w-75 mx-auto">Di DockVPS, kami tidak hanya menyediakan server virtual, kami memberikan pengalaman
+          yang solid, fleksibel, dan terpercaya bagi setiap pengguna.</p>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="container">
+
+      <!-- FAST -->
+      <div class="row">
+        <div class="col-lg mx-auto mt-4">
+          <div class="d-flex flex-row justify-content-between align-items-center p-4 shadow-sm border border-black"
+            style="background-color: #efefef; border-radius: 20px;">
+
+            <!-- TEKS -->
+            <div class="text pe-4" style="width: 70%;">
+              <h4 class="fw-bold mb-2">Cepat dan Responsif</h4>
+              <p class="mb-0" style="font-size: 15px;">
+                Ditenagai oleh SSD NVMe dan jaringan berkecepatan tinggi, VPS kami memberikan akses super cepat untuk
+                semua
+                kebutuhan dari website bisnis hingga aplikasi backend.
+              </p>
+            </div>
+
+            <!-- GAMBAR -->
+            <div class="image">
+              <img src="../../assets/components/icons/fast.svg" alt="fastClock" width="200" height="200">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- STABLE -->
+      <div class="row mb-5">
+        <div class="col-lg-6 mx-auto mt-4">
+          <div class="d-flex flex-row justify-content-between align-items-center p-4 shadow-sm border border-black"
+            style="background-color: #efefef; border-radius: 20px; height: 240px;">
+
+            <!-- TEKS -->
+            <div class="text pe-4" style="width: 70%;">
+              <h4 class="fw-bold mb-2">Stabil dan Andal</h4>
+              <p class="mb-0" style="font-size: 15px;">
+                Dengan infrastruktur yang terus dimonitor 24/7 dan uptime hingga 99.9%, server kamu selalu siap jalan
+                kapan pun dibutuhkan. Ideal untuk bisnis yang butuh layanan konsisten dan tanpa gangguan.
+              </p>
+            </div>
+
+            <!-- GAMBAR -->
+            <div class="image">
+              <img src="../../assets/components/icons/stable.svg" alt="stability" width="150" height="150">
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SUPER USER -->
+        <div class="col-lg-6 mx-auto mt-4">
+          <div class="d-flex flex-row justify-content-between align-items-center p-4 shadow-sm border border-black"
+            style="background-color: #efefef; border-radius: 20px; height: 240px;">
+
+            <!-- TEKS -->
+            <div class="text pe-4" style="width: 70%;">
+              <h4 class="fw-bold mb-2">Kontrol penuh ditanganmu</h4>
+              <p class="mb-0" style="font-size: 15px;">
+                Layanan VPS kami dirancang untuk memberikan kontrol penuh, ideal bagi developer maupun tim teknis yang
+                membutuhkan fleksibilitas tinggi dalam pengelolaan server.
+              </p>
+            </div>
+
+            <!-- GAMBAR -->
+            <div class="image">
+              <img src="../../assets/components/icons/customable.svg" alt="superUSer" width="130" height="130">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- CONTACT US -->
+  <section class="container-fluid">
+
+    <div class="row mx-4">
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
+
+        <!-- ICONS -->
+        <div class="feature-ico bg-white border border-black px-4 py-2 mb-2" style="border-radius: 20px; width: 170px;">
+          <div class="inner d-flex flex-row gap-3 align-items-center">
+            <img src="../../assets/components/icons/feature-ico.svg" alt="feature" width="25" height="25">
+            <p class="m-0" style="color: #46399c; font-size: 15px;">CONTACT</p>
+          </div>
+        </div>
+
+        <h1>Hubungi Kami</h1>
+        <p>Punya pertanyaan, butuh bantuan teknis, atau ingin tahu lebih lanjut soal layanan kami ?
+          Tim DockVPS siap membantu kamu dengan cepat dan ramah. Hubungi kami kapan saja, kami senang bisa terhubung
+          denganmu!</p>
+
+        <!-- LIST SOCIAL MEDIA & OTHERS (ganti ku warna hideung)-->
+        <!-- <div class="d-flex flex-row gap-3">
+          <img src="../../assets/components/icons/linkedin.svg" alt="linkedin" width="42" height="42">
+          <img src="../../assets/components/icons/instagram.svg" alt="instagram" width="42" height="42">
+        </div> -->
+
+        <!-- CONSULT -->
+        <a href="#" style="text-decoration: none;">
+          <div class="btn btn-md px-5 py-3 my-4" style="background-color: #5948C6;">
+            <div class="d-flex flex-row gap-4 align-items-center">
+              <img src="../../assets/components/icons/whatsapp.svg" alt="whatsapp" width="30" height="30">
+              <p class="fw-bold text-white m-0">Konsultasi dengan kami</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-6 d-flex justify-content-end my-5">
+        <img src="../../assets/components/img/sprite-about.png" alt="company" width="400" height="500"
+          class="rounded shadow-sm">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="container-fluid p-5" style="background-color: #46399c;">
+
+    <div class="row">
+
+      <div class="col-lg-2 mt-2 mx-3">
+        <h1 class="text-white" style="font-size: 26px;">Products</h1>
+        <ul class="list-unstyled">
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Home</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Pricing</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Products</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">VPS List</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Support Center</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 mt-2 mx-3">
+        <h1 class="text-white" style="font-size: 26px;">Support</h1>
+        <ul class="list-unstyled">
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Home</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Pricing</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Products</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">VPS List</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Support Center</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 mt-2 mx-3">
+        <h1 class="text-white" style="font-size: 26px;">Informasi</h1>
+        <ul class="list-unstyled">
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Home</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Pricing</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Products</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">VPS List</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Support Center</li>
+          </a>
+        </ul>
+      </div>
+
+      <!-- BRANDING SECTION -->
+      <div class="col-lg-5 text-white">
+        <a class="navbar-brand fw-bold text-white" href="#" style="font-size: 40px;">Dock<span class="bg-white pe-4"
+            style="color: #46399c;">Vps</span></a>
+        <p>DockVPS adalah penyedia layanan VPS yang mengutamakan kecepatan, kestabilan, dan fleksibilitas. Kami hadir
+          untuk mendukung kebutuhan developer, bisnis, dan pelaku UKM melalui infrastruktur server yang andal, mudah
+          dikelola, dan scalable sesuai kebutuhan anda</p>
+        <div class="d-flex flex-row gap-3">
+          <img src="../../assets/components/icons/linkedin.svg" alt="linkedin" width="42" height="42">
+          <img src="../../assets/components/icons/instagram.svg" alt="linkedin" width="42" height="42">
+        </div>
+        <a href="#" style="text-decoration: none;">
+          <div class="btn btn-md px-5 py-3 my-4" style="background-color: #fefefe;">
+            <div class="d-flex flex-row gap-4 align-items-center">
+              <img src="../../assets/components/icons/whatsapp.svg" alt="whatsapp" width="30" height="30">
+              <p class="fw-bold text-success m-0">Konsultasi dengan kami</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <p class="text-white ms-3" style="opacity: 50%;">© DockVps 2025. All rights reserved.</p>
+
+    </div>
+  </footer>
+</body>
+
 </html>
