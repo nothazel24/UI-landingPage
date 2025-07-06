@@ -1,12 +1,452 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap components -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+AMvyTG2U1zY+UJ0k0t9UJ0ZC2tm" crossorigin="anonymous"></script>
+
+  <title>DockVPS | List</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR SECTION -->
+  <nav class="navbar navbar-expand-lg navbar-light py-3 px-5 d-flex flex-row fixed-top" style="
+          background-color: #fefefe;
+          border-bottom: 1px solid rgba(43, 43, 43, 0.07);
+        ">
+    <div class="logo">
+      <a class="navbar-brand fw-bold" href="#">Dock<span class="text-white"
+          style="background-color: #5948C6; padding-right: 1rem;">Vps</span></a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+
+        <div class="nav-links mx-5 d-flex flex-row">
+          <li class="nav-item active me-3">
+            <a class="nav-link" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item active me-3">
+            <a class="nav-link" href="index.html">Products</a>
+          </li>
+          <li class="nav-item active me-3">
+            <a class="nav-link" href="../about-us/index.html">About us</a>
+          </li>
+        </div>
+
+        <li class="nav-item">
+          <a class="nav-link ml-4" href="../login/index.html">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 ml-3 font-weight-bold rounded text-white fw-bold mx-3"
+            style="background-color: #5948C6;" href="#">Registrasi</a>
+        </li>
+      </ul>
+    </div>
+  </nav> <!-- END NAV SECTION -->
+
+  <!-- HOMEPAGE -->
+  <section class="homepage">
+    <div class="container-fluid position-relative p-0 m-0" style="height: 500px;">
+
+      <img src="../../assets/components/img/bg.png" class="w-100 h-100"
+        style="filter: brightness(30%); object-fit: cover;" alt="background" />
+
+      <div class="container-fluid position-absolute top-50 start-50 translate-middle text-white text-center my-5">
+        <h1 style="font-size: 60px;" class="text-warning">List VPS</h1>
+        <p style="font-size: 20px;">Pilih VPS-mu. <span style="border-bottom: 2px solid #5948C6;">Bangun</span>, <span
+            style="border-bottom: 2px solid #5948C6;">Kelola,</span> dan <span
+            style="border-bottom: 2px solid #5948C6;">Kembangkan</span> Sesukamu.</p>
+
+        <div class="feature-list m-5 border border-white rounded py-3"
+          style="background-color: rgba(239, 239, 239, 0.2);">
+          <div class="row mx-auto" style="width: 90%;">
+            <div class="col-lg-2">
+              <p class="my-1" style="font-size: small;">Mulai dari <span class="text-white pe-2" style="background-color: #5948C6;">Rp 100.000</span></p>
+            </div>
+
+            <div class="col-lg-2 d-flex flex-row gap-3 align-content-center justify-content-center">
+              <img src="../../assets/components/icons/guarantee.svg" alt="processor" width="30" height="30">
+              <p class="my-1" style="font-size: small;">Garansi 99.9%</p>
+            </div>
+
+            <div class="col-lg-2 d-flex flex-row gap-3 align-content-center justify-content-center">
+              <img src="../../assets/components/icons/proc.svg" alt="processor" width="30" height="30">
+              <p class="my-1" style="font-size: small;">AMD EPYC</p>
+            </div>
+
+            <div class="col-lg-2 d-flex flex-row gap-3 align-content-center justify-content-center">
+              <img src="../../assets/components/icons/storage.svg" alt="processor" width="30" height="30">
+              <p class="my-1" style="font-size: small;">Up to 20.000GB</p>
+            </div>
+
+            <div class="col-lg-2 d-flex flex-row gap-3 align-content-center justify-content-center">
+              <img src="../../assets/components/icons/secure.svg" alt="processor" width="30" height="30">
+              <p class="my-1" style="font-size: small;">DDoS protection</p>
+            </div>
+
+            <div class="col-lg-2 d-flex flex-row gap-3 align-content-center justify-content-center">
+              <img src="../../assets/components/icons/db.svg" alt="processor" width="30" height="30">
+              <p class="my-1" style="font-size: small;">RAID</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CATEGORY -->
+  <section class="category my-5">
+    <h1 class="text-center">Kategori</h1>
+    <div class="d-flex flex-row py-4 px-5 align-items-center gap-5 my-4 justify-content-between"
+      style="background-color: #efefef;">
+
+      <div class="text d-flex gap-5">
+        <!-- BISA DIGANTI SAMA CHECKBOX ATAU APAPUN ITU UNTUK NANTI -->
+        <p class="m-0">Sistem Operasi</p>
+        <p class="m-0">Arsitektur</p>
+        <p class="m-0">Harga</p>
+      </div>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Cari berdasarkan" aria-label="Search">
+        <button class="btn px-4" type="submit" style="border: 1px solid #5948C6; color: #5948C6;">Cari</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- VPS LIST -->
+  <section class="list-vps mb-5">
+    <div class="container-fluid">
+
+      <!-- EXAMPLE ROW 1 -->
+      <div class="row mb-5 mx-4">
+        
+        <!-- VPS CARD -->
+        <div class="col-lg-3">
+          <div class="shadow-sm" style="background-color: #fefefe; border-radius: 10px; border: 1px solid rgba(43, 43, 43, 0.07);">
+            <div class="img">
+              <img src="../../assets/components/img/profile.jpg" alt="vps-image" height="200"
+                style="border-radius: 10px 10px 0 0; filter: brightness(80%); object-fit: cover; width: 100%;">
+            </div>
+            <div class="p-4">
+              <h1 style="font-size: 30px;">VPS Package</h1>
+              <ul class="list-unstyled">
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+              </ul>
+            </div>
+
+            <div class="d-flex justify-content-between mx-4 mb-3 align-items-center">
+              <a href="#" class="text-dark" style="text-decoration: none;">Detail</a>
+              <a href="#" class="btn btn-md px-3 text-white fw-bold" style="background-color: #5948C6;">Checkout</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- VPS CARD -->
+        <div class="col-lg-3">
+          <div class="shadow-sm" style="background-color: #fefefe; border-radius: 10px; border: 1px solid rgba(43, 43, 43, 0.07);">
+            <div class="img">
+              <img src="../../assets/components/img/profile.jpg" alt="vps-image" height="200"
+                style="border-radius: 10px 10px 0 0; filter: brightness(80%); object-fit: cover; width: 100%;">
+            </div>
+            <div class="p-4">
+              <h1 style="font-size: 30px;">VPS Package</h1>
+              <ul class="list-unstyled">
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+              </ul>
+            </div>
+
+            <div class="d-flex justify-content-between mx-4 mb-3 align-items-center">
+              <a href="#" class="text-dark" style="text-decoration: none;">Detail</a>
+              <a href="#" class="btn btn-md px-3 text-white fw-bold" style="background-color: #5948C6;">Checkout</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- VPS CARD -->
+        <div class="col-lg-3">
+          <div class="shadow-sm" style="background-color: #fefefe; border-radius: 10px; border: 1px solid rgba(43, 43, 43, 0.07);">
+            <div class="img">
+              <img src="../../assets/components/img/profile.jpg" alt="vps-image" height="200"
+                style="border-radius: 10px 10px 0 0; filter: brightness(80%); object-fit: cover; width: 100%;">
+            </div>
+            <div class="p-4">
+              <h1 style="font-size: 30px;">VPS Package</h1>
+              <ul class="list-unstyled">
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+              </ul>
+            </div>
+
+            <div class="d-flex justify-content-between mx-4 mb-3 align-items-center">
+              <a href="#" class="text-dark" style="text-decoration: none;">Detail</a>
+              <a href="#" class="btn btn-md px-3 text-white fw-bold" style="background-color: #5948C6;">Checkout</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- VPS CARD -->
+        <div class="col-lg-3">
+          <div class="shadow-sm" style="background-color: #fefefe; border-radius: 10px; border: 1px solid rgba(43, 43, 43, 0.07);">
+            <div class="img">
+              <img src="../../assets/components/img/profile.jpg" alt="vps-image" height="200"
+                style="border-radius: 10px 10px 0 0; filter: brightness(80%); object-fit: cover; width: 100%;">
+            </div>
+            <div class="p-4">
+              <h1 style="font-size: 30px;">VPS Package</h1>
+              <ul class="list-unstyled">
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+              </ul>
+            </div>
+
+            <div class="d-flex justify-content-between mx-4 mb-3 align-items-center">
+              <a href="#" class="text-dark" style="text-decoration: none;">Detail</a>
+              <a href="#" class="btn btn-md px-3 text-white fw-bold" style="background-color: #5948C6;">Checkout</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- EXAMPLE ROW 2 -->
+      <div class="row mb-5 mx-4">
+        
+        <!-- VPS CARD -->
+        <div class="col-lg-3">
+          <div class="shadow-sm" style="background-color: #fefefe; border-radius: 10px; border: 1px solid rgba(43, 43, 43, 0.07);">
+            <div class="img">
+              <img src="../../assets/components/img/profile.jpg" alt="vps-image" height="200"
+                style="border-radius: 10px 10px 0 0; filter: brightness(80%); object-fit: cover; width: 100%;">
+            </div>
+            <div class="p-4">
+              <h1 style="font-size: 30px;">VPS Package</h1>
+              <ul class="list-unstyled">
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+              </ul>
+            </div>
+
+            <div class="d-flex justify-content-between mx-4 mb-3 align-items-center">
+              <a href="#" class="text-dark" style="text-decoration: none;">Detail</a>
+              <a href="#" class="btn btn-md px-3 text-white fw-bold" style="background-color: #5948C6;">Checkout</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- VPS CARD -->
+        <div class="col-lg-3">
+          <div class="shadow-sm" style="background-color: #fefefe; border-radius: 10px; border: 1px solid rgba(43, 43, 43, 0.07);">
+            <div class="img">
+              <img src="../../assets/components/img/profile.jpg" alt="vps-image" height="200"
+                style="border-radius: 10px 10px 0 0; filter: brightness(80%); object-fit: cover; width: 100%;">
+            </div>
+            <div class="p-4">
+              <h1 style="font-size: 30px;">VPS Package</h1>
+              <ul class="list-unstyled">
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+              </ul>
+            </div>
+
+            <div class="d-flex justify-content-between mx-4 mb-3 align-items-center">
+              <a href="#" class="text-dark" style="text-decoration: none;">Detail</a>
+              <a href="#" class="btn btn-md px-3 text-white fw-bold" style="background-color: #5948C6;">Checkout</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- VPS CARD -->
+        <div class="col-lg-3">
+          <div class="shadow-sm" style="background-color: #fefefe; border-radius: 10px; border: 1px solid rgba(43, 43, 43, 0.07);">
+            <div class="img">
+              <img src="../../assets/components/img/profile.jpg" alt="vps-image" height="200"
+                style="border-radius: 10px 10px 0 0; filter: brightness(80%); object-fit: cover; width: 100%;">
+            </div>
+            <div class="p-4">
+              <h1 style="font-size: 30px;">VPS Package</h1>
+              <ul class="list-unstyled">
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+              </ul>
+            </div>
+
+            <div class="d-flex justify-content-between mx-4 mb-3 align-items-center">
+              <a href="#" class="text-dark" style="text-decoration: none;">Detail</a>
+              <a href="#" class="btn btn-md px-3 text-white fw-bold" style="background-color: #5948C6;">Checkout</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- VPS CARD -->
+        <div class="col-lg-3">
+          <div class="shadow-sm" style="background-color: #fefefe; border-radius: 10px; border: 1px solid rgba(43, 43, 43, 0.07);">
+            <div class="img">
+              <img src="../../assets/components/img/profile.jpg" alt="vps-image" height="200"
+                style="border-radius: 10px 10px 0 0; filter: brightness(80%); object-fit: cover; width: 100%;">
+            </div>
+            <div class="p-4">
+              <h1 style="font-size: 30px;">VPS Package</h1>
+              <ul class="list-unstyled">
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+                <li>Feature Example</li>
+              </ul>
+            </div>
+
+            <div class="d-flex justify-content-between mx-4 mb-3 align-items-center">
+              <a href="#" class="text-dark" style="text-decoration: none;">Detail</a>
+              <a href="#" class="btn btn-md px-3 text-white fw-bold" style="background-color: #5948C6;">Checkout</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER SECTION -->
+  <footer class="container-fluid p-5" style="background-color: #46399c;">
+
+    <div class="row">
+
+      <div class="col-lg-2 mt-2">
+        <h1 class="text-white" style="font-size: 26px;">Products</h1>
+        <ul class="list-unstyled">
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Home</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Pricing</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Products</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">VPS List</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Support Center</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 mt-2">
+        <h1 class="text-white" style="font-size: 26px;">Support</h1>
+        <ul class="list-unstyled">
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Home</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Pricing</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Products</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">VPS List</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Support Center</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 mt-2">
+        <h1 class="text-white" style="font-size: 26px;">Informasi</h1>
+        <ul class="list-unstyled">
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Home</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Pricing</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Products</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">VPS List</li>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <li class="text-white pt-2">Support Center</li>
+          </a>
+        </ul>
+      </div>
+
+      <!-- BRANDING SECTION -->
+      <div class="col-lg-6 text-white">
+        <a class="navbar-brand fw-bold text-white" href="#" style="font-size: 40px;">Dock<span class="bg-white pe-4"
+            style="color: #46399c;">Vps</span></a>
+        <p>DockVPS adalah penyedia layanan VPS yang mengutamakan kecepatan, kestabilan, dan fleksibilitas. Kami hadir
+          untuk mendukung kebutuhan developer, bisnis, dan pelaku UKM melalui infrastruktur server yang andal, mudah
+          dikelola, dan scalable sesuai kebutuhan anda</p>
+        <div class="d-flex flex-row gap-3">
+          <img src="../../assets/components/icons/linkedin.svg" alt="linkedin" width="42" height="42">
+          <img src="../../assets/components/icons/instagram.svg" alt="linkedin" width="42" height="42">
+        </div>
+        <a href="#" style="text-decoration: none;">
+          <div class="btn btn-md px-5 py-3 my-4" style="background-color: #fefefe;">
+            <div class="d-flex flex-row gap-4 align-items-center">
+              <img src="../../assets/components/icons/whatsapp.svg" alt="whatsapp" width="30" height="30">
+              <p class="fw-bold text-success m-0">Konsultasi dengan kami</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <p class="text-white" style="opacity: 50%;">© DockVps 2025. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+</body>
+
 </html>
